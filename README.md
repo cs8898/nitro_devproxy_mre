@@ -12,8 +12,7 @@ Nitro devProxy drops basepath of proxied server (only accepts Protocol, Host and
 {
     devProxy: {
         "/api": {
-           target: "http://localhost:3001/api",
-           autoRewrite: true
+           target: "http://localhost:3001/api"
         }
     }
 }
