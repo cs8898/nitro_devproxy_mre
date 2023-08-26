@@ -30,11 +30,11 @@ const handleProxy2 = async (req, res) => {
 const server = createServer(async (req, res) => {
     if (req.url.startsWith("/api")) {
         handleProxy(req, res)
-    } else if(req.url.startsWith("/foo")) {
+    } else if (req.url.startsWith("/foo") || req.url.startsWith("/bar")) {
         handleProxy2(req, res);
-    }else{
+    } else {
         res.statusCode = 200;
-        res.end("server_path: "+ req.url)
+        res.end(`server_path: ${req.url}`)
     }
 });
 server.listen(3000, () => {
