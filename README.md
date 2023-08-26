@@ -43,3 +43,10 @@ Simple HTTP Server elevating httpxy to server `/api` via Proxy
 ### nitor_mre ❌
 
 Nitro stater sample, with devProxy
+
+## Changes
+
+1. add proxy2 to httpxy_mre
+   * `/foo` as entrypoint
+   * initialize directly on proxy creation (similar to nitro [dev/server.ts](https://github.com/unjs/nitro/blob/main/src/dev/server.ts#L259C1-L267C8))
+2. add `/foo` to nitro devProxy
