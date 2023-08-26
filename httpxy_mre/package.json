@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "httpxy": "^0.1.2"
+  }
+}
